@@ -1,4 +1,4 @@
-require "./repl_game"
+require "./enlighten"
 include Enlightenment
 
 intro_game
