@@ -20,3 +20,4 @@ else
   puts $inventory
   puts
   puts "Care to try again?"
+end
