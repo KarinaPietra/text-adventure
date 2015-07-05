@@ -1,9 +1,33 @@
 module Enlightenment
 
-$inventory = []
-$death_count = 0
-$run = 0
-$miss = 0
+  $inventory = []
+  $death_count = 0
+  $run = 0
+  $miss = 0
+
+  # this method is for displaying the final stats in the game
+  def stats
+    if $death_count == 0
+      print "You've never died. "
+    elsif $death_count > 1
+      print "You've died #{$death_count} times. "
+    elsif $death_count < 0
+      print "Your non-death might awaken something. "
+    else
+      print "You've died #{$death_count} time. "
+    end
+
+    if $inventory.empty?
+      print "You have no items.\n"
+      puts "Care to try again?"
+    else
+      print "You've collected:\n"
+      puts $inventory
+      puts
+      puts "Care to try again?"
+    end
+  end
+
 
   # method for displaying options to user
   def display_choices
@@ -142,7 +166,7 @@ end
 
       END
       sleep(2)
-      $death_count = 0
+      $death_count = -1
     else
       if $miss > 0
         puts <<-END
