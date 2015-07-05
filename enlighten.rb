@@ -338,4 +338,16 @@ end
       end
     end
   end
+
+  def main_game
+    intro_game
+    ask_player
+    intro_game
+    ask_player2
+    intro_game
+    ask_player3
+    end_game
+    ask_player4
+    stats
+  end
 end
