@@ -178,7 +178,7 @@ Surprisingly, you don't die. Instead, you get a skunk.
       else
         puts "You die a million deaths."
         sleep(2)
-        $death_count += 1000000
+        $death_count += 1_000_000
       end
     end
   end
