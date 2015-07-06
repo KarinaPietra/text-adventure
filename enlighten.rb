@@ -350,4 +350,5 @@ You slipped and died.
     ask_player4
     stats
   end
+
 end
