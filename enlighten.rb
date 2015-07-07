@@ -125,7 +125,7 @@ it didn't matter.
       END
       sleep(2)
       $death_count += 1
-    when "S"
+    when "S"    #branch within a branch!
       puts <<-END
 Staying in the room isn't so bad, after all,
 you were in here for a reason.
