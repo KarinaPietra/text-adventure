@@ -1,4 +1,3 @@
 # text-adventure
-simple, small text adventure game project
-
-made for class in wyncode
+Simple, small text adventure game project
+Made for class in wyncode
